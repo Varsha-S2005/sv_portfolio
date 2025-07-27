@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S. Varsha Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  <style>
+  .pastel-skill {
+    background-color: #fef6e4; 
+    color: #333; 
+  }
+
+  .dark .pastel-skill {
+    background-color: #5C4033; 
+    color: #F8F8F8;
+    border: 1px solid #7B3F00;
+  }
+
+  ul {
+    padding-left: 1.5em; 
+  }
+  ul li {
+    margin-bottom: 0.5em; 
+  }
+</style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-blue-100 dark:bg-gradient-to-br dark:from-blue-950 dark:to-black font-sans">
+  <button id="darkToggle" class="fixed top-4 right-4 z-50 bg-gray-800 text-white w-10 h-10 rounded-full shadow flex items-center justify-center">
+    <i class="fas fa-moon" id="darkToggleIcon"></i>
+  </button>
+  <div class="flex flex-col lg:flex-row min-h-screen pt-6 px-4 gap-6">
+    <aside class="w-full lg:w-[30%] bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-xl shadow-md p-6 flex flex-col items-center h-fit sticky top-6">
+      <img src="sv_passport-size.jpg" alt="Profile Picture" class="w-36 h-45  mb-4 bg-white rounded-md" />
+
+      <h2 class="text-4xl font-bold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent font-mono dark:from-yellow-400 dark:to-orange-500">S.VARSHA</h2>
+      <p class="text-gray-500 dark:text-gray-300 text-center">Pre-final year student at Shiv Nadar University</p>
+      <div class="flex space-x-4 my-4 text-blue-500">
+        <a href="https://github.com/Varsha-S2005"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/s-varsha/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="text-sm text-left w-full space-y-2 text-gray-600 dark:text-gray-300">
+        <p class="flex items-center"><i class="fas fa-phone mr-2"></i>+91 9871579051</p>
+        <p class="flex items-center"><i class="fas fa-envelope mr-2"></i>Varshapandian95@gmail.com</p>
+        <p class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i>Chennai, India</p>
+      </div>
+      <a href="svresume.pdf" target="_blank">
+        <button class="mt-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300">Download Resume</button>
+      </a>
+    </aside>
+
+    <div class="flex-1 max-w-full lg:pr-20">
+        <nav class="hidden lg:flex fixed right-6 top-1/2 transform -translate-y-1/2 flex-col items-center bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md space-y-4 z-10">
+          <a href="#about" class="text-blue-500"><i class="fas fa-user"></i></a>
+          <a href="#experience" class="text-gray-500 hover:text-blue-500"><i class="fas fa-briefcase"></i></a>
+          <a href="#projects" class="text-gray-500 hover:text-blue-500"><i class="fas fa-file-alt"></i></a>
+          <a href="#skills" class="text-gray-500 hover:text-blue-500"><i class="fas fa-cogs"></i></a>
+          <a href="#certifications" class="text-gray-500 hover:text-blue-500"><i class="fas fa-trophy"></i></a>
+        </nav>
+
+        <section id="about" class="fade-in bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-xl shadow-md p-6 mt-6 lg:mt-0">
+          <h2 class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent font-mono dark:from-yellow-400 dark:to-orange-500">About Me</h2>
+          <p class="text-gray-700 dark:text-gray-300 mt-2">I’m a passionate Computer Science student specializing in IoT at Shiv Nadar University, Chennai. I love solving problems through code, designing intuitive interfaces, and building real-world applications.</p>
+        </section>
+
+        <section id="experience" class="fade-in bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-xl shadow-md p-6 mt-6">
+          <h2 class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent font-mono dark:from-yellow-400 dark:to-orange-500">Experience</h2>
+          <h3 class="font-semibold text-gray-800 dark:text-gray-200 mt-4">Web Development Intern – WAISL Limited, New Delhi (June 2025 – July 2025)</h3>
+          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mt-2">
+            <li>Contributed to the CDM project enhancing backend data flow for airport operations.</li>
+            <li>Built a JSP frontend integrated with MySQL to streamline data input and management.</li>
+            <li>Automated Excel report generation using Apache POI, improving accuracy and reducing manual workload.</li>
+            <li>Collaborated in Agile sprints with Git-based workflows and regular peer reviews.</li>
+          </ul>
+        </section>
+
+        <section id="projects" class="fade-in bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-xl shadow-md p-6 mt-6">
+          <h2 class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent font-mono dark:from-yellow-400 dark:to-orange-500">Projects</h2>
+          <div class="space-y-4 mt-4"> <div class="bg-pink-100 dark:bg-pink-900 dark:text-white px-4 py-2 rounded-lg shadow">
+              <a href="https://github.com/Varsha-S2005/smart-energy-meter" target="_blank" class="text-blue-600 dark:text-blue-300 hover:underline">
+                <strong>Smart Energy Meter</strong>
+              </a><br />
+              <em>C++, Arduino, ESP8266, IoT, PZEM-004T</em><br/>
+              <span class="text-sm text-gray-600 dark:text-gray-400">Feb 2024 – May 2024</span>
+              <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 mt-1">
+                <li>Designed and developed a smart energy metering system to monitor real-time power consumption.</li>
+                <li>Devised robust error handling and Wi-Fi connectivity to ensure seamless data transmission.</li>
+                <li>Enabled users to track and manage energy usage efficiently through continuous monitoring.</li>
+              </ul>
+            </div>
+            <div class="bg-blue-100 dark:bg-blue-900 dark:text-white px-4 py-2 rounded-lg shadow">
+              <a href="https://github.com/Varsha-S2005/emi-loan-calculator" target="_blank" class="text-blue-600 dark:text-blue-300 hover:underline">
+                <strong>EMI Loan Calculator</strong>
+              </a><br />
+              <em>Python, Flask, MySQL, HTML/CSS, JavaScript</em><br/>
+              <span class="text-sm text-gray-600 dark:text-gray-400">Mar 2025 – Apr 2025</span>
+              <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 mt-1">
+                <li>Developed and deployed a dynamic EMI calculation feature for fast financial planning.</li>
+                <li>Engineered a responsive and interactive web interface for seamless loan EMI calculation.</li>
+              </ul>
+            </div>
+            <div class="bg-yellow-100 dark:bg-yellow-900 dark:text-white px-4 py-2 rounded-lg shadow">
+              <a href="https://github.com/Varsha-S2005/CDM-aircraft-board" target="_blank" class="text-blue-600 dark:text-blue-300 hover:underline">
+                <strong>CDM Project</strong>
+              </a><br />
+              <em>JSP, MySQL, Apache POI, Java</em><br/>
+              <span class="text-sm text-gray-600 dark:text-gray-400">June 2025 – Present</span>
+              <ul class="list-disc list-inside text-sm text-gray-700 dark:text-gray-300 mt-1">
+                <li>Built a JSP-based system for analyzing structured flight data.</li>
+                <li>Converted fixed-width text files to Excel and MySQL using POI and backend logic with timestamps and DOP validation.</li>
+                <li>Currently developing a Spring Boot-based backend module for secure login and role-based access.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="fade-in bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-xl shadow-md p-6 mt-6">
+          <h2 class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent font-mono dark:from-yellow-400 dark:to-orange-500">Skills</h2>
+          <div class="space-y-4 mt-4">
+            <div>
+              <h3 class="font-semibold text-gray-800 dark:text-gray-200">Languages</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="pastel-skill px-3 py-1 rounded-full">C++</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">Python</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">Java</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">HTML/CSS</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">JavaScript</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">MySQL</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">ARM Assembly</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-800 dark:text-gray-200">Tools & Frameworks</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="pastel-skill px-3 py-1 rounded-full">Git</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">Shell Scripting</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">React.js</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">Spring Boot</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">Docker</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">Agile</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">Microservices</span>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-800 dark:text-gray-200">Core CS</h3>
+              <div class="flex flex-wrap gap-2">
+                <span class="pastel-skill px-3 py-1 rounded-full">DSA</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">OOPS</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">Operating Systems</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">Computer Networks</span>
+                <span class="pastel-skill px-3 py-1 rounded-full">DBMS</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="certifications" class="fade-in bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-xl shadow-md p-6 mt-6">
+          <h2 class="text-3xl font-bold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent font-mono dark:from-yellow-400 dark:to-orange-500">Achievements and Certifications</h2>
+          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mt-4">
+            <li>Top 30 team – Smart India Hackathon 2024 (GLOFs warning system - Engineered an early warning system with advanced sensors, real-time data processing, and predictive algorithms for rapid threat detection and alerting.)</li>
+            <li>Penultimate stage finalist – Hackoverflow 8.0 (NIT Durgapur)</li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/A4XQHDBLV007" target="_blank" class="text-blue-600 dark:text-blue-300 hover:underline">IBM Certified – Python for Data Science, AI & Development (May 2025)</a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/2HVKJWY58X87" target="_blank" class="text-blue-600 dark:text-blue-300 hover:underline">Meta – Programming with JavaScript (May 2025)</a></li>
+            <li><a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs125/Course/NPTEL24CS125S96010075404253564.pdf" target="_blank" class="text-blue-600 dark:text-blue-300 hover:underline">NPTEL – Programming in Modern C++ (Nov 2024)</a></li>
+            <li><a href="https://www.udemy.com/certificate/UC-34fdb566-60d5-4bb8-9a87-e4c71e5d85c8/" target="_blank" class="text-blue-600 dark:text-blue-300 hover:underline">Udemy – Mastering DSA (Oct 2024)</a></li>
+          </ul>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('darkToggle').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      const icon = document.getElementById('darkToggleIcon');
+      if (document.documentElement.classList.contains('dark')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    });
+
+    // Initialize the icon on page load based on current dark mode setting
+    document.addEventListener('DOMContentLoaded', () => {
+        const icon = document.getElementById('darkToggleIcon');
+        if (document.documentElement.classList.contains('dark')) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+        }
+    });
+
+    const faders = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    faders.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
